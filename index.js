@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     // Banner Owl Carousel
 $("#banner-area .owl-carousel").owlCarousel({
     dots: true,
@@ -32,7 +31,6 @@ var $grid = $(".grid").isotope({
      var filterValue=$(this).attr('data-filter');
      $grid.isotope({filter:filterValue});
  })
-
  // New phones owl carousel
 $("#new-phones .owl-carousel").owlCarousel({
     loop:true,
@@ -51,4 +49,19 @@ $("#new-phones .owl-carousel").owlCarousel({
     }
  });
 
-}); 
+$("#blogs .owl-carousel").owlCarousel({
+    loop:true,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 3
+        },
+    }
+})
+
+
+});

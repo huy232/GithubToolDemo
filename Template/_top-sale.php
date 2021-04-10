@@ -1,4 +1,4 @@
-        <!--Top sale-->
+ <!--Top sale-->
 <?php
 
   shuffle($product_shuffle);
